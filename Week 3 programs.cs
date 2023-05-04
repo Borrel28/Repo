@@ -27,9 +27,9 @@ namespace HelloWorld
         
         // Displays the job information in the format "Job Title (Company) StartYear-EndYear",
         // for example: "Software Engineer (Microsoft) 2019-2022".
-        public void Job()
+        public void JobInformtion()
         {
-            Console.WriteLine($"{_jobTitle}, {company}");
+            Console.WriteLine($"{_jobTitle}, {_companyName}");
             Console.WriteLine($"{_startYear}");
             Console.WriteLine($"{_endYear}");
             Console.WriteLine();
@@ -78,36 +78,3 @@ namespace HelloWorld
   }
 }
 
-
-//1) Activity Instructions.
-    // the principle of abstraction to create classes to represent a resume or an job history for a person like I being seen on LinkedIn.
-
-// Design the Classes 
-// this responsibility of a Person is to hold and display personal my Resume (information).
-//    public class Person
-    {
-        // The C# convention is to start member variables with an underscore _
-        public string _givenName = "";
-        public string _familyName = "";
-
-        // A special method, called a constructor that is invoked using the  
-        // new keyword followed by the class name and parentheses.
-        public Person()
-        {
-        }
-
-        // A method that displays the person's full name as used in eastern 
-        // countries or <family name, given name>.
-        public void ShowEasternName()
-        {
-            Console.WriteLine($"{_familyName}, {_givenName}");
-        }
-
-        // A method that displays the person's full name as used in western 
-        // countries or <given name family name>.
-        public void ShowWesternName()
-        {
-            Console.WriteLine($"{_givenName} {_familyName}");
-        }
-    }
-    
