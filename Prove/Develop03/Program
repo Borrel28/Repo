@@ -1,0 +1,55 @@
+class Scripture
+{
+  // data
+  public int _id = 1;
+  public string _reference ="";
+  public string _verse ="";
+  
+}
+class PrivateObeject
+{
+  private static object _id = 1;
+  private static object _reference = "James 1:5";
+  private static object _verse = "If any of lack wisdom, let him ask of God that giveth to all menliberally, and upbraideth not; and it shall be given him.";
+
+  static void Main()
+  {
+    Scripture S = new Scripture();
+    S._id = 1;
+    S._reference = "James 1:5";
+    S._verse = "If any of lack wisdom, let him ask of God that giveth to all menliberally, and upbraideth not; and it shall be given him.";
+    Console.WriteLine($"Scripture:{_reference}, chapter {_id}, verse 5 {_verse}");
+
+    Console.WriteLine("will you cotinue, write [enter] or to quit [Quit] to  ?");
+  
+    string answer = Console.ReadLine();
+
+    if (answer =="enter") 
+    {
+        Console.WriteLine("Good day.");
+        Scripture Sc = new Scripture();
+        Sc._id = 1;
+        Sc._reference = "1 Nephi 1:7";
+        Sc._verse = "Et il arriva que moi, Néphi, je dis à mon père : J’irai et je ferai les choses que le Seigneur a commandées, car je sais que le Seigneur ne donne pas de commandements aux enfants des hommes sans leur préparer la voie pour qu’ils puissent accomplir ce qu’il leur commande.";
+        Console.WriteLine($"Scripture:{_reference}, chapter {_id}, verse 7 {_verse}");
+        Console.WriteLine("We are in the end of this program, do you like it share it with us? ");
+        string answer1 = Console.ReadLine(); 
+        Console.ReadKey();
+        Console.WriteLine("_____________BYE_BYE_BY__________________BYE_BYE_BYE___________________BYE_BYE_BY______________");
+    }
+    else 
+    {
+        Console.WriteLine("You successfuly Quit.");
+    }
+
+
+
+    Console.ReadKey();
+    // This will clear the console
+    Console.Clear();
+    
+
+    
+  }
+
+}
